@@ -15,7 +15,7 @@ console.log(process)
 app.use(express.json());
 app.listen(port, () => console.log("App is running"));
 
-app.get('/display', async(req,res) =>{
+app.get('/', async(req,res) =>{
     try{
         let clientInfo = await mongoClient.connect(dbUrl);
         let db =  clientInfo.db("first_db");
