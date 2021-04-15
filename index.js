@@ -13,7 +13,7 @@ const dbUrl = process.env.DB_URL;
 console.log(process)
 // R0BTo4171uqkeANY
 app.use(express.json());
-app.listen(4000, () => console.log("App is running"));
+app.listen(port, () => console.log("App is running"));
 
 app.get('/display', async(req,res) =>{
     try{
