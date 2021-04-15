@@ -3,8 +3,12 @@ const mongodb = require("mongodb");
 require("dotenv").config();
  //const dbUrl = "mongodb://127.0.0.1:27017";
 const app = express();
+
+const port = process.env.PORT || 4000
+
 const mongoClient = mongodb.MongoClient;
 const objectID = mongodb.ObjectID;
+
 const dbUrl = process.env.DB_URL;
 console.log(process)
 // R0BTo4171uqkeANY
